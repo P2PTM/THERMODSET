@@ -12,20 +12,20 @@ os.makedirs(processed_data_dir, exist_ok=True)
 # Mapping of file names to zones and measures
 file_groups = {
     "Zone 1 - Jan 23_Jun 23": {
-        "humidity": os.path.join(raw_data_dir, "Zone 1 - Humidity - Jan 23_Jun 23.json"),
-        "temperature": os.path.join(raw_data_dir, "Zone 1 - Temperature - Jan 23_Jun 23.json"),
+        "humidity": os.path.join(raw_data_dir, "Zone 1 - Humidity - Jan 23_Jun 23"),
+        "temperature": os.path.join(raw_data_dir, "Zone 1 - Temperature - Jan 23_Jun 23"),
     },
     "Zone 1 - Jun 23_Dec 23": {
-        "humidity": os.path.join(raw_data_dir, "Zone 1 - Humidity - Jun 23_Dec 23.json"),
-        "temperature": os.path.join(raw_data_dir, "Zone 1 - Temperature - Jun 23_Dec 23.json"),
+        "humidity": os.path.join(raw_data_dir, "Zone 1 - Humidity - Jun 23_Dec 23"),
+        "temperature": os.path.join(raw_data_dir, "Zone 1 - Temperature - Jun 23_Dec 23"),
     },
     "Zone 2 - Jan 23_Jun 23": {
-        "humidity": os.path.join(raw_data_dir, "Zone 2 - Humidity - Jan 23_Jun 23.json"),
-        "temperature": os.path.join(raw_data_dir, "Zone 2 - Temperature - Jan 23_Jun 23.json"),
+        "humidity": os.path.join(raw_data_dir, "Zone 2 - Humidity - Jan 23_Jun 23"),
+        "temperature": os.path.join(raw_data_dir, "Zone 2 - Temperature - Jan 23_Jun 23"),
     },
     "Zone 2 - Jun 23_Dec 23": {
-        "humidity": os.path.join(raw_data_dir, "Zone 2 - Humidity - Jun 23_Dec 23.json"),
-        "temperature": os.path.join(raw_data_dir, "Zone 2 - Temperature - Jun 23_Dec 23.json"),
+        "humidity": os.path.join(raw_data_dir, "Zone 2 - Humidity - Jun 23_Dec 23"),
+        "temperature": os.path.join(raw_data_dir, "Zone 2 - Temperature - Jun 23_Dec 23"),
     },
 }
 
