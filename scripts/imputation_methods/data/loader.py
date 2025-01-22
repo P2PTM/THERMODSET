@@ -34,7 +34,7 @@ class DataLoader:
                         columns_with_nan: List[str],
                         invalid_value: int = -1) -> pd.DataFrame:
         """
-        Preprocess data by replacing invalid values with NaN.
+        Preprocess data by replacing invalid (-1) values with NaN.
 
         Args:
             data: Input DataFrame

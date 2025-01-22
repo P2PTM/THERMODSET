@@ -9,7 +9,6 @@ logger = logging.getLogger(__name__)
 def validate_data(data: pd.DataFrame, columns: List[str]) -> bool:
     """Validate input data format and contents."""
     try:
-        # Check if required columns exist
         missing_cols = set(columns) - set(data.columns)
         if missing_cols:
             raise ValueError(f"Missing required columns: {missing_cols}")

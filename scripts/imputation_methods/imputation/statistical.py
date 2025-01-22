@@ -8,7 +8,6 @@ logger = logging.getLogger(__name__)
 
 
 class StatisticalImputer(BaseImputer):
-    """Statistical imputation methods."""
 
     def impute(self, data: pd.DataFrame, columns: List[str], method: str = 'mean') -> pd.DataFrame:
         """

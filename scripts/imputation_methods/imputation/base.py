@@ -18,5 +18,7 @@ class BaseImputer(ABC):
 
         Returns:
             pd.DataFrame: DataFrame with imputed values
+        Usage:
+            Serves as a parent imputer for the rest of the imputation classes
         """
         pass
