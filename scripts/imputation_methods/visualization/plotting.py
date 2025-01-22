@@ -24,7 +24,7 @@ class ImputationVisualizer:
             method (str): Name of the imputation method.
             output_dir (str): Directory to save the plots.
         """
-        os.makedirs(output_dir, exist_ok=True)  # Ensure the directory exists
+        os.makedirs(output_dir, exist_ok=True)
 
         for col in columns:
             plt.figure(figsize=(10, 6))
@@ -52,7 +52,7 @@ class ImputationVisualizer:
             columns (List[str]): List of column names to plot.
             output_dir (str): Directory to save the plot.
         """
-        os.makedirs(output_dir, exist_ok=True)  # Ensure the directory exists
+        os.makedirs(output_dir, exist_ok=True)
 
         plt.figure(figsize=(10, 6))
         sns.heatmap(data[columns].isna(), cmap='viridis', cbar_kws={'label': 'Missing'})
@@ -74,7 +74,7 @@ class ImputationVisualizer:
             evaluations (Dict): Dictionary of evaluation metrics.
             output_dir (str): Directory to save the plots.
         """
-        os.makedirs(output_dir, exist_ok=True)  # Ensure the directory exists
+        os.makedirs(output_dir, exist_ok=True)
 
         metrics_df = pd.DataFrame([
             {
@@ -92,7 +92,6 @@ class ImputationVisualizer:
         g.map_dataframe(sns.barplot, x='method', y='value')
         g.fig.suptitle('Imputation Method Comparison', y=1.02)
 
-        # Save plot as PNG
         filename = f"{output_dir}/evaluation_metrics_comparison.png"
         g.savefig(filename, format='png')
         logger.info(f"Saved plot: {filename}")

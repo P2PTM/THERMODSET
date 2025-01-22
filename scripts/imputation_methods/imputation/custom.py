@@ -8,7 +8,6 @@ logger = logging.getLogger(__name__)
 
 
 class CustomImputer(BaseImputer):
-    """Custom imputation implementation."""
 
     def __init__(self, seasonal_period: int = 1440):
         self.seasonal_period = seasonal_period
