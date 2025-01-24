@@ -112,7 +112,7 @@ def main():
 
         results[best_method].to_csv(output_path, index=False)
 
-        eval_path = config.evaluation_path + '/evaluation_metrics.json'
+        eval_path = config.base_path +  config.evaluation_path + '/evaluation_metrics.json'
         with open(eval_path, 'w') as f:
             json.dump(evaluations, f, indent=4)
 

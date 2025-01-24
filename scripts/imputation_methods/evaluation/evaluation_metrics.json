@@ -1,0 +1,758 @@
+{
+    "custom": {
+        "inside_temperature": {
+            "original": {
+                "mean": 23.92294,
+                "median": 23.843,
+                "variance": 54.91874
+            },
+            "imputed": {
+                "mean": 23.8042,
+                "median": 23.6945,
+                "variance": 55.60875
+            },
+            "differences": {
+                "mean_diff": 0.11874,
+                "median_diff": 0.1485,
+                "variance_diff": 0.69001
+            }
+        },
+        "inside_humidity": {
+            "original": {
+                "mean": 47.15068,
+                "median": 46.4585,
+                "variance": 139.32144
+            },
+            "imputed": {
+                "mean": 47.15845,
+                "median": 46.584,
+                "variance": 137.54469
+            },
+            "differences": {
+                "mean_diff": 0.00777,
+                "median_diff": 0.1255,
+                "variance_diff": 1.77675
+            }
+        },
+        "GHI": {
+            "original": {
+                "mean": 235.03637,
+                "median": 2.2694,
+                "variance": 100154.69068
+            },
+            "imputed": {
+                "mean": 235.06523,
+                "median": 2.28054,
+                "variance": 100162.3259
+            },
+            "differences": {
+                "mean_diff": 0.02886,
+                "median_diff": 0.01114,
+                "variance_diff": 7.63522
+            }
+        },
+        "DNI": {
+            "original": {
+                "mean": 265.45139,
+                "median": 0.0,
+                "variance": 127336.44266
+            },
+            "imputed": {
+                "mean": 265.4617,
+                "median": 0.0,
+                "variance": 127337.85835
+            },
+            "differences": {
+                "mean_diff": 0.01031,
+                "median_diff": 0.0,
+                "variance_diff": 1.41569
+            }
+        },
+        "DHI": {
+            "original": {
+                "mean": 70.70264,
+                "median": 1.76308,
+                "variance": 10886.74904
+            },
+            "imputed": {
+                "mean": 70.71743,
+                "median": 1.79062,
+                "variance": 10888.30525
+            },
+            "differences": {
+                "mean_diff": 0.01479,
+                "median_diff": 0.02754,
+                "variance_diff": 1.55621
+            }
+        },
+        "outside_temperature": {
+            "original": {
+                "mean": 20.76434,
+                "median": 20.06133,
+                "variance": 77.34625
+            },
+            "imputed": {
+                "mean": 20.76494,
+                "median": 20.06133,
+                "variance": 77.35667
+            },
+            "differences": {
+                "mean_diff": 0.0006,
+                "median_diff": 0.0,
+                "variance_diff": 0.01042
+            }
+        },
+        "outside_humidity": {
+            "original": {
+                "mean": 54.86262,
+                "median": 54.10733,
+                "variance": 570.71725
+            },
+            "imputed": {
+                "mean": 54.86158,
+                "median": 54.10733,
+                "variance": 570.73914
+            },
+            "differences": {
+                "mean_diff": 0.00104,
+                "median_diff": 0.0,
+                "variance_diff": 0.02189
+            }
+        },
+        "BP": {
+            "original": {
+                "mean": 962.68006,
+                "median": 962.45702,
+                "variance": 15.06727
+            },
+            "imputed": {
+                "mean": 962.6801,
+                "median": 962.45702,
+                "variance": 15.06605
+            },
+            "differences": {
+                "mean_diff": 4e-05,
+                "median_diff": 0.0,
+                "variance_diff": 0.00122
+            }
+        },
+        "WS": {
+            "original": {
+                "mean": 2.61579,
+                "median": 2.36827,
+                "variance": 3.69635
+            },
+            "imputed": {
+                "mean": 2.61577,
+                "median": 2.36827,
+                "variance": 3.69606
+            },
+            "differences": {
+                "mean_diff": 2e-05,
+                "median_diff": 0.0,
+                "variance_diff": 0.00029
+            }
+        },
+        "WD_Avg": {
+            "original": {
+                "mean": 177.11888,
+                "median": 168.59187,
+                "variance": 13807.43651
+            },
+            "imputed": {
+                "mean": 177.10885,
+                "median": 168.58667,
+                "variance": 13807.39434
+            },
+            "differences": {
+                "mean_diff": 0.01003,
+                "median_diff": 0.0052,
+                "variance_diff": 0.04217
+            }
+        },
+        "WSgust_Max": {
+            "original": {
+                "mean": 4.17659,
+                "median": 3.874,
+                "variance": 6.60518
+            },
+            "imputed": {
+                "mean": 4.17657,
+                "median": 3.874,
+                "variance": 6.60472
+            },
+            "differences": {
+                "mean_diff": 2e-05,
+                "median_diff": 0.0,
+                "variance_diff": 0.00046
+            }
+        }
+    },
+    "linear": {
+        "inside_temperature": {
+            "original": {
+                "mean": 23.92294,
+                "median": 23.843,
+                "variance": 54.91874
+            },
+            "imputed": {
+                "mean": 23.80912,
+                "median": 23.6945,
+                "variance": 55.50011
+            },
+            "differences": {
+                "mean_diff": 0.11382,
+                "median_diff": 0.1485,
+                "variance_diff": 0.58137
+            }
+        },
+        "inside_humidity": {
+            "original": {
+                "mean": 47.15068,
+                "median": 46.4585,
+                "variance": 139.32144
+            },
+            "imputed": {
+                "mean": 47.1483,
+                "median": 46.563,
+                "variance": 137.21885
+            },
+            "differences": {
+                "mean_diff": 0.00238,
+                "median_diff": 0.1045,
+                "variance_diff": 2.10259
+            }
+        },
+        "GHI": {
+            "original": {
+                "mean": 235.03637,
+                "median": 2.2694,
+                "variance": 100154.69068
+            },
+            "imputed": {
+                "mean": 235.06521,
+                "median": 2.28054,
+                "variance": 100162.32604
+            },
+            "differences": {
+                "mean_diff": 0.02884,
+                "median_diff": 0.01114,
+                "variance_diff": 7.63536
+            }
+        },
+        "DNI": {
+            "original": {
+                "mean": 265.45139,
+                "median": 0.0,
+                "variance": 127336.44266
+            },
+            "imputed": {
+                "mean": 265.46171,
+                "median": 0.0,
+                "variance": 127337.85279
+            },
+            "differences": {
+                "mean_diff": 0.01032,
+                "median_diff": 0.0,
+                "variance_diff": 1.41013
+            }
+        },
+        "DHI": {
+            "original": {
+                "mean": 70.70264,
+                "median": 1.76308,
+                "variance": 10886.74904
+            },
+            "imputed": {
+                "mean": 70.7174,
+                "median": 1.79062,
+                "variance": 10888.29444
+            },
+            "differences": {
+                "mean_diff": 0.01476,
+                "median_diff": 0.02754,
+                "variance_diff": 1.5454
+            }
+        },
+        "outside_temperature": {
+            "original": {
+                "mean": 20.76434,
+                "median": 20.06133,
+                "variance": 77.34625
+            },
+            "imputed": {
+                "mean": 20.76494,
+                "median": 20.06133,
+                "variance": 77.35667
+            },
+            "differences": {
+                "mean_diff": 0.0006,
+                "median_diff": 0.0,
+                "variance_diff": 0.01042
+            }
+        },
+        "outside_humidity": {
+            "original": {
+                "mean": 54.86262,
+                "median": 54.10733,
+                "variance": 570.71725
+            },
+            "imputed": {
+                "mean": 54.86158,
+                "median": 54.10733,
+                "variance": 570.73906
+            },
+            "differences": {
+                "mean_diff": 0.00104,
+                "median_diff": 0.0,
+                "variance_diff": 0.02181
+            }
+        },
+        "BP": {
+            "original": {
+                "mean": 962.68006,
+                "median": 962.45702,
+                "variance": 15.06727
+            },
+            "imputed": {
+                "mean": 962.6801,
+                "median": 962.45702,
+                "variance": 15.06605
+            },
+            "differences": {
+                "mean_diff": 4e-05,
+                "median_diff": 0.0,
+                "variance_diff": 0.00122
+            }
+        },
+        "WS": {
+            "original": {
+                "mean": 2.61579,
+                "median": 2.36827,
+                "variance": 3.69635
+            },
+            "imputed": {
+                "mean": 2.61577,
+                "median": 2.36827,
+                "variance": 3.69606
+            },
+            "differences": {
+                "mean_diff": 2e-05,
+                "median_diff": 0.0,
+                "variance_diff": 0.00029
+            }
+        },
+        "WD_Avg": {
+            "original": {
+                "mean": 177.11888,
+                "median": 168.59187,
+                "variance": 13807.43651
+            },
+            "imputed": {
+                "mean": 177.10876,
+                "median": 168.58667,
+                "variance": 13807.41808
+            },
+            "differences": {
+                "mean_diff": 0.01012,
+                "median_diff": 0.0052,
+                "variance_diff": 0.01843
+            }
+        },
+        "WSgust_Max": {
+            "original": {
+                "mean": 4.17659,
+                "median": 3.874,
+                "variance": 6.60518
+            },
+            "imputed": {
+                "mean": 4.17657,
+                "median": 3.874,
+                "variance": 6.60472
+            },
+            "differences": {
+                "mean_diff": 2e-05,
+                "median_diff": 0.0,
+                "variance_diff": 0.00046
+            }
+        }
+    },
+    "nocb": {
+        "inside_temperature": {
+            "original": {
+                "mean": 23.92294,
+                "median": 23.843,
+                "variance": 54.91874
+            },
+            "imputed": {
+                "mean": 23.75636,
+                "median": 23.6945,
+                "variance": 56.07398
+            },
+            "differences": {
+                "mean_diff": 0.16658,
+                "median_diff": 0.1485,
+                "variance_diff": 1.15524
+            }
+        },
+        "inside_humidity": {
+            "original": {
+                "mean": 47.15068,
+                "median": 46.4585,
+                "variance": 139.32144
+            },
+            "imputed": {
+                "mean": 47.17838,
+                "median": 46.571,
+                "variance": 137.04173
+            },
+            "differences": {
+                "mean_diff": 0.0277,
+                "median_diff": 0.1125,
+                "variance_diff": 2.27971
+            }
+        },
+        "GHI": {
+            "original": {
+                "mean": 235.03637,
+                "median": 2.2694,
+                "variance": 100154.69068
+            },
+            "imputed": {
+                "mean": 235.06617,
+                "median": 2.28054,
+                "variance": 100164.32481
+            },
+            "differences": {
+                "mean_diff": 0.0298,
+                "median_diff": 0.01114,
+                "variance_diff": 9.63413
+            }
+        },
+        "DNI": {
+            "original": {
+                "mean": 265.45139,
+                "median": 0.0,
+                "variance": 127336.44266
+            },
+            "imputed": {
+                "mean": 265.46263,
+                "median": 0.0,
+                "variance": 127338.19106
+            },
+            "differences": {
+                "mean_diff": 0.01124,
+                "median_diff": 0.0,
+                "variance_diff": 1.7484
+            }
+        },
+        "DHI": {
+            "original": {
+                "mean": 70.70264,
+                "median": 1.76308,
+                "variance": 10886.74904
+            },
+            "imputed": {
+                "mean": 70.71663,
+                "median": 1.79062,
+                "variance": 10887.99598
+            },
+            "differences": {
+                "mean_diff": 0.01399,
+                "median_diff": 0.02754,
+                "variance_diff": 1.24694
+            }
+        },
+        "outside_temperature": {
+            "original": {
+                "mean": 20.76434,
+                "median": 20.06133,
+                "variance": 77.34625
+            },
+            "imputed": {
+                "mean": 20.76498,
+                "median": 20.06133,
+                "variance": 77.35799
+            },
+            "differences": {
+                "mean_diff": 0.00064,
+                "median_diff": 0.0,
+                "variance_diff": 0.01174
+            }
+        },
+        "outside_humidity": {
+            "original": {
+                "mean": 54.86262,
+                "median": 54.10733,
+                "variance": 570.71725
+            },
+            "imputed": {
+                "mean": 54.86142,
+                "median": 54.10733,
+                "variance": 570.74131
+            },
+            "differences": {
+                "mean_diff": 0.0012,
+                "median_diff": 0.0,
+                "variance_diff": 0.02406
+            }
+        },
+        "BP": {
+            "original": {
+                "mean": 962.68006,
+                "median": 962.45702,
+                "variance": 15.06727
+            },
+            "imputed": {
+                "mean": 962.68011,
+                "median": 962.45702,
+                "variance": 15.06606
+            },
+            "differences": {
+                "mean_diff": 5e-05,
+                "median_diff": 0.0,
+                "variance_diff": 0.00121
+            }
+        },
+        "WS": {
+            "original": {
+                "mean": 2.61579,
+                "median": 2.36827,
+                "variance": 3.69635
+            },
+            "imputed": {
+                "mean": 2.61577,
+                "median": 2.36827,
+                "variance": 3.69605
+            },
+            "differences": {
+                "mean_diff": 2e-05,
+                "median_diff": 0.0,
+                "variance_diff": 0.0003
+            }
+        },
+        "WD_Avg": {
+            "original": {
+                "mean": 177.11888,
+                "median": 168.59187,
+                "variance": 13807.43651
+            },
+            "imputed": {
+                "mean": 177.10556,
+                "median": 168.58667,
+                "variance": 13808.26691
+            },
+            "differences": {
+                "mean_diff": 0.01332,
+                "median_diff": 0.0052,
+                "variance_diff": 0.8304
+            }
+        },
+        "WSgust_Max": {
+            "original": {
+                "mean": 4.17659,
+                "median": 3.874,
+                "variance": 6.60518
+            },
+            "imputed": {
+                "mean": 4.1766,
+                "median": 3.874,
+                "variance": 6.60469
+            },
+            "differences": {
+                "mean_diff": 1e-05,
+                "median_diff": 0.0,
+                "variance_diff": 0.00049
+            }
+        }
+    },
+    "median": {
+        "inside_temperature": {
+            "original": {
+                "mean": 23.92294,
+                "median": 23.843,
+                "variance": 54.91874
+            },
+            "imputed": {
+                "mean": 23.92098,
+                "median": 23.843,
+                "variance": 53.57448
+            },
+            "differences": {
+                "mean_diff": 0.00196,
+                "median_diff": 0.0,
+                "variance_diff": 1.34426
+            }
+        },
+        "inside_humidity": {
+            "original": {
+                "mean": 47.15068,
+                "median": 46.4585,
+                "variance": 139.32144
+            },
+            "imputed": {
+                "mean": 47.13373,
+                "median": 46.4585,
+                "variance": 135.92187
+            },
+            "differences": {
+                "mean_diff": 0.01695,
+                "median_diff": 0.0,
+                "variance_diff": 3.39957
+            }
+        },
+        "GHI": {
+            "original": {
+                "mean": 235.03637,
+                "median": 2.2694,
+                "variance": 100154.69068
+            },
+            "imputed": {
+                "mean": 235.0157,
+                "median": 2.2694,
+                "variance": 100150.60795
+            },
+            "differences": {
+                "mean_diff": 0.02067,
+                "median_diff": 0.0,
+                "variance_diff": 4.08273
+            }
+        },
+        "DNI": {
+            "original": {
+                "mean": 265.45139,
+                "median": 0.0,
+                "variance": 127336.44266
+            },
+            "imputed": {
+                "mean": 265.42782,
+                "median": 0.0,
+                "variance": 127331.39213
+            },
+            "differences": {
+                "mean_diff": 0.02357,
+                "median_diff": 0.0,
+                "variance_diff": 5.05053
+            }
+        },
+        "DHI": {
+            "original": {
+                "mean": 70.70264,
+                "median": 1.76308,
+                "variance": 10886.74904
+            },
+            "imputed": {
+                "mean": 70.69652,
+                "median": 1.76308,
+                "variance": 10886.20433
+            },
+            "differences": {
+                "mean_diff": 0.00612,
+                "median_diff": 0.0,
+                "variance_diff": 0.54471
+            }
+        },
+        "outside_temperature": {
+            "original": {
+                "mean": 20.76434,
+                "median": 20.06133,
+                "variance": 77.34625
+            },
+            "imputed": {
+                "mean": 20.76428,
+                "median": 20.06133,
+                "variance": 77.33943
+            },
+            "differences": {
+                "mean_diff": 6e-05,
+                "median_diff": 0.0,
+                "variance_diff": 0.00682
+            }
+        },
+        "outside_humidity": {
+            "original": {
+                "mean": 54.86262,
+                "median": 54.10733,
+                "variance": 570.71725
+            },
+            "imputed": {
+                "mean": 54.86255,
+                "median": 54.10733,
+                "variance": 570.66662
+            },
+            "differences": {
+                "mean_diff": 7e-05,
+                "median_diff": 0.0,
+                "variance_diff": 0.05063
+            }
+        },
+        "BP": {
+            "original": {
+                "mean": 962.68006,
+                "median": 962.45702,
+                "variance": 15.06727
+            },
+            "imputed": {
+                "mean": 962.68004,
+                "median": 962.45702,
+                "variance": 15.06593
+            },
+            "differences": {
+                "mean_diff": 2e-05,
+                "median_diff": 0.0,
+                "variance_diff": 0.00134
+            }
+        },
+        "WS": {
+            "original": {
+                "mean": 2.61579,
+                "median": 2.36827,
+                "variance": 3.69635
+            },
+            "imputed": {
+                "mean": 2.61577,
+                "median": 2.36827,
+                "variance": 3.69603
+            },
+            "differences": {
+                "mean_diff": 2e-05,
+                "median_diff": 0.0,
+                "variance_diff": 0.00032
+            }
+        },
+        "WD_Avg": {
+            "original": {
+                "mean": 177.11888,
+                "median": 168.59187,
+                "variance": 13807.43651
+            },
+            "imputed": {
+                "mean": 177.11812,
+                "median": 168.59187,
+                "variance": 13806.21693
+            },
+            "differences": {
+                "mean_diff": 0.00076,
+                "median_diff": 0.0,
+                "variance_diff": 1.21958
+            }
+        },
+        "WSgust_Max": {
+            "original": {
+                "mean": 4.17659,
+                "median": 3.874,
+                "variance": 6.60518
+            },
+            "imputed": {
+                "mean": 4.17656,
+                "median": 3.874,
+                "variance": 6.6046
+            },
+            "differences": {
+                "mean_diff": 3e-05,
+                "median_diff": 0.0,
+                "variance_diff": 0.00058
+            }
+        }
+    }
+}
