@@ -96,7 +96,7 @@ def main():
                 processed_data, results[method], config.columns_with_nan, method
             )
             # visualize the results
-            #ImputationVisualizer.plot_distributions(processed_data, results[method], config.columns_with_nan, method)
+            ImputationVisualizer.plot_distributions(processed_data, results[method], config.columns_with_nan, method)
 
         output_path = Path(args.output_path)
         # Determine the best method by minimizing the differences in mean, median, and variance
