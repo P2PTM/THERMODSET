@@ -32,12 +32,6 @@ def generate_synthetic_data(original_data, n_samples=None):
     # Resample with replacement
     synthetic_data = resample(original_data, replace=True, n_samples=n_samples)
 
-    # Add some noise
-    for col in synthetic_data.columns:
-        if col in ['time', 'house','zone','device_id']:
-            continue
-        synthetic_data[col] += np.random.normal(0, synthetic_data[col].std() * 0.1, size=n_samples)
-
     return synthetic_data
 
 
@@ -88,7 +82,8 @@ def train_and_detect_anomalies(data_path):
     # Train and evaluate each model on synthetic data
     for name, model in models.items():
         logger.info(f"Training {name} model on synthetic data...")
-
+        y_pred = None
+        y_pred_proba = None
         # Model-specific training and prediction
         if name == 'XGBoost':
             model.train(X_train, y_train)
@@ -108,9 +103,10 @@ def train_and_detect_anomalies(data_path):
             y_pred, y_pred_proba = model.predict(X_test)
 
         # Evaluate model
-        metrics = evaluate_model(y_test, y_pred, y_pred_proba, name)
-        model_metrics[name] = metrics
-        predictions_dict[name] = y_pred_proba
+        if y_pred is not None and y_pred_proba is not None :
+            metrics = evaluate_model(y_test, y_pred, y_pred_proba, name)
+            model_metrics[name] = metrics
+            predictions_dict[name] = y_pred_proba
 
     # Plot ROC curves
     plot_roc_curves(y_test, predictions_dict)
@@ -123,6 +119,7 @@ def train_and_detect_anomalies(data_path):
     main_data_processed, _ = preprocess_data(main_data)
     X_main = main_data_processed.drop(['time'], axis=1)
 
+    y_pred_main = None
     # Apply best model to main data
     if best_model_name in ['XGBoost', 'Naive Bayes']:
         y_pred_main = best_model.predict(X_main)

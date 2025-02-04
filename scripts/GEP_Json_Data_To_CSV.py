@@ -2,11 +2,9 @@ import os
 import json
 import pandas as pd
 
-# Define paths based on project structure
 raw_data_dir = "../data/raw/"
 processed_data_dir = "../data/processed/"
 
-# Ensure the processed directory exists
 os.makedirs(processed_data_dir, exist_ok=True)
 
 # Mapping of file names to zones and measures
@@ -29,10 +27,8 @@ file_groups = {
     },
 }
 
-# Initialize an empty DataFrame for merging
 final_data = pd.DataFrame()
 
-# Process each file group
 for zone_period, files in file_groups.items():
     # Load humidity data
     with open(files["humidity"], "r") as hum_file:
@@ -57,10 +53,8 @@ for zone_period, files in file_groups.items():
     # Add zone information
     merged_df["zone"] = zone_period.split(" - ")[0]
 
-    # Reorder columns
     merged_df = merged_df[["zone", "time", "device_id", "house", "temperature", "humidity"]]
 
-    # Concatenate to final data
     final_data = pd.concat([final_data, merged_df])
 
 # Save the intermediate merged data to the processed folder

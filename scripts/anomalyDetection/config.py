@@ -112,9 +112,9 @@ class Config:
 
         config = cls()
         config.DATA = DataConfig(
-            raw_path=Path(config_dict['DATA']['raw_path']),
-            processed_path=Path(config_dict['DATA']['processed_path']),
-            anomaly_free_path=Path(config_dict['DATA']['anomaly_free_path']),
+            raw_path=str(Path(config_dict['DATA']['raw_path'])),
+            processed_path=str(Path(config_dict['DATA']['processed_path'])),
+            anomaly_free_path=str(Path(config_dict['DATA']['anomaly_free_path'])),
             input_file=config_dict['DATA']['input_file'],
             output_file=config_dict['DATA']['output_file']
         )

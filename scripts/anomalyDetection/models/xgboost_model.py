@@ -1,7 +1,7 @@
 import xgboost as xgb
 from sklearn.model_selection import GridSearchCV
 from .base_model import BaseModel
-from scripts.anomalyDetection.config import Config
+from scripts.anomalyDetection.config import config
 from scripts.anomalyDetection.utils.logger import logger
 
 
@@ -12,14 +12,14 @@ class XGBoostDetector(BaseModel):
     def train(self, X_train, y_train):
         logger.info("Training XGBoost model...")
         base_model = xgb.XGBClassifier(
-            random_state=Config.TRAINING.random_state,
+            random_state=config.TRAINING.random_state,
             use_label_encoder=False,
             eval_metric='logloss'
         )
 
         grid_search = GridSearchCV(
             estimator=base_model,
-            param_grid=Config.MODELS.xgboost_params,
+            param_grid=config.MODELS.xgboost_params,
             scoring='f1',
             cv=5,
             verbose=1,

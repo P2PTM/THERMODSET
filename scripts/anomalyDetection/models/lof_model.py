@@ -40,7 +40,8 @@ class LOFDetector(BaseModel):
         self.model = LocalOutlierFactor(
             n_neighbors=best_params['n_neighbors'],
             contamination=best_params['contamination'],
-            metric=best_params['metric']
+            metric=best_params['metric'],
+            novelty=True
         )
         self.model.fit(X_train)
         self.best_params = best_params
@@ -56,14 +57,14 @@ class LOFDetector(BaseModel):
     def score_samples(self, X):
         if self.model is None:
             raise ValueError("Model needs to be trained first")
-        return self.model._score_samples(X)
+        return self.model.score_samples(X)
 
     def predict_proba(self, X):
         if self.model is None:
             raise ValueError("Model needs to be trained first")
 
         # Compute the negative outlier factor for the input data
-        negative_outlier_factor = self.model._score_samples(X)
+        negative_outlier_factor = self.model.score_samples(X)
 
         # Normalize the negative outlier factor to [0, 1] for probability interpretation
         # Outliers will have a probability closer to 1

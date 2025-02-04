@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 
-def inject_and_label_anomalies(data: pd.DataFrame, target_anomaly_rate: float = 0.07):
+def inject_and_label_anomalies(data: pd.DataFrame, target_anomaly_rate: float = 0.1):
     np.random.seed(42)
     modified_data = data.copy()
 
@@ -24,7 +24,7 @@ def inject_and_label_anomalies(data: pd.DataFrame, target_anomaly_rate: float = 
 
     # Inject illogical values only for inside temperature and inside humidity
     for idx in anomaly_indices:
-        modified_data.at[idx, 'inside_temperature'] += np.random.uniform(50, 100)
-        modified_data.at[idx, 'inside_humidity'] += np.random.uniform(20, 50)
+        modified_data.at[idx, 'inside_temperature'] += np.random.uniform(60, 100)
+        modified_data.at[idx, 'inside_humidity'] += np.random.uniform(0, 10)
 
     return modified_data, labels
