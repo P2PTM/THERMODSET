@@ -161,18 +161,18 @@ def main():
     )
     results['best_model'].save_model(model_save_path)
 
-    # Save anomaly-free data
-    main_data = pd.read_csv(input_path)
-    anomaly_mask = np.ones(len(main_data), dtype=bool)
-    anomaly_mask[results['anomalies_in_main_data']] = False
-    anomaly_free_data = main_data[anomaly_mask]
-
-    output_path = os.path.join(
-        config.DATA.anomaly_free_path,
-        config.DATA.output_file
-    )
-    anomaly_free_data.to_csv(output_path, index=False)
-    logger.info(f"Anomaly-free data saved to {output_path}")
+    # Check if the main data is anomaly-free
+    if len(results['anomalies_in_main_data']) == 0:
+        # Save anomaly-free data
+        main_data = pd.read_csv(input_path)
+        output_path = str(os.path.join(
+            config.DATA.anomaly_free_path,
+            config.DATA.output_file
+        ))
+        main_data.to_csv(output_path)
+        logger.info(f"Anomaly-free data saved to {output_path}")
+    else:
+        logger.info("The main data contains anomalies and will not be saved to the anomaly-free folder.")
 
     # Save configuration
     config_save_path = os.path.join(

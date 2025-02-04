@@ -1,11 +1,18 @@
 import os
 import json
+import zipfile
 import pandas as pd
 
 raw_data_dir = "../data/raw/"
 processed_data_dir = "../data/processed/"
 
 os.makedirs(processed_data_dir, exist_ok=True)
+
+# Extract zip file
+zip_path = os.path.join(raw_data_dir, "compressed.zip")
+with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+   zip_ref.extractall(raw_data_dir)
+
 
 # Mapping of file names to zones and measures
 file_groups = {
