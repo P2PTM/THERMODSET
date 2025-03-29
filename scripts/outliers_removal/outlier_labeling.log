@@ -1,0 +1,60 @@
+2025-03-24 13:14:07,609 - __main__ - INFO - Found 1 files to process
+2025-03-24 13:14:07,610 - __main__ - INFO - Loading data from ../../data/processed/custom_imputation/2023/ml_based\imputed_ml_based_2023_Zone_1.csv
+2025-03-24 13:14:09,987 - __main__ - INFO - Labeling outliers in column: temperature
+2025-03-24 13:14:10,307 - __main__ - INFO - Labeling outliers in column: humidity
+2025-03-24 13:14:10,679 - __main__ - INFO - Automatically labeled 7889 outliers out of 524162 records (1.51%)
+2025-03-24 13:14:13,777 - __main__ - INFO - Generated plot: temperature_outliers_zone_Zone 1.png
+2025-03-24 13:14:16,154 - __main__ - INFO - Generated plot: humidity_outliers_zone_Zone 1.png
+2025-03-24 13:14:16,167 - __main__ - INFO - Saving labeled data to ../../data/processed/custom_imputation/2023/labeled_outliers\labeled_outliers_2023_1.csv
+2025-03-24 13:14:26,362 - __main__ - INFO - Data successfully saved to ../../data/processed/custom_imputation/2023/labeled_outliers\labeled_outliers_2023_1.csv
+2025-03-24 13:14:26,395 - __main__ - INFO - Successfully processed 1 out of 1 files
+2025-03-24 13:34:56,916 - __main__ - INFO - Found 1 files to process
+2025-03-24 13:34:56,918 - __main__ - INFO - Loading data from ../../data/processed/custom_imputation/forecasted\imputed_forecasted_data_2024_zone_1.csv
+2025-03-24 13:34:57,790 - __main__ - INFO - Labeling outliers in column: temperature
+2025-03-24 13:34:57,912 - __main__ - INFO - Labeling outliers in column: humidity
+2025-03-24 13:34:58,018 - __main__ - INFO - Automatically labeled 4978 outliers out of 218881 records (2.27%)
+2025-03-24 13:34:59,504 - __main__ - INFO - Generated plot: temperature_outliers_zone_Zone 1.png
+2025-03-24 13:35:00,730 - __main__ - INFO - Generated plot: humidity_outliers_zone_Zone 1.png
+2025-03-24 13:35:00,736 - __main__ - INFO - Saving labeled data to ../../data/processed/custom_imputation/labeled_outliers\labeled_outliers_2024_1.csv
+2025-03-24 13:35:03,971 - __main__ - INFO - Data successfully saved to ../../data/processed/custom_imputation/labeled_outliers\labeled_outliers_2024_1.csv
+2025-03-24 13:35:03,986 - __main__ - INFO - Successfully processed 1 out of 1 files
+2025-03-26 10:47:52,444 - __main__ - INFO - Found 1 files to process
+2025-03-26 10:47:52,446 - __main__ - INFO - Loading data from ../../data/processed/custom_imputation/forecasted\imputed_forecasted_data_2024_zone_1.csv
+2025-03-26 10:47:53,374 - __main__ - INFO - Labeling outliers in column: temperature
+2025-03-26 10:47:53,540 - __main__ - INFO - Labeling outliers in column: humidity
+2025-03-26 10:47:53,706 - __main__ - INFO - Automatically labeled 8058 outliers out of 218881 records (3.68%)
+2025-03-26 10:47:55,043 - __main__ - INFO - Generated plot: temperature_outliers_zone_Zone 1.png
+2025-03-26 10:47:56,227 - __main__ - INFO - Generated plot: humidity_outliers_zone_Zone 1.png
+2025-03-26 10:47:56,232 - __main__ - INFO - Saving labeled data to ../../data/processed/custom_imputation/labeled_outliers\labeled_outliers_2024_1.csv
+2025-03-26 10:47:59,232 - __main__ - INFO - Data successfully saved to ../../data/processed/custom_imputation/labeled_outliers\labeled_outliers_2024_1.csv
+2025-03-26 10:47:59,245 - __main__ - INFO - Successfully processed 1 out of 1 files
+2025-03-26 11:03:12,793 - __main__ - INFO - Found 1 files to process
+2025-03-26 11:03:12,794 - __main__ - INFO - Loading data from ../../data/processed/custom_imputation/forecasted\imputed_forecasted_data_2024_zone_1.csv
+2025-03-26 11:03:13,740 - __main__ - INFO - Labeling outliers in column: temperature
+2025-03-26 11:03:13,930 - __main__ - INFO - Labeling outliers in column: humidity
+2025-03-26 11:03:14,099 - __main__ - INFO - Automatically labeled 8058 outliers out of 218881 records (3.68%)
+2025-03-26 11:03:15,598 - __main__ - INFO - Generated plot: temperature_outliers_zone_Zone 1.png
+2025-03-26 11:03:16,846 - __main__ - INFO - Generated plot: humidity_outliers_zone_Zone 1.png
+2025-03-26 11:03:16,851 - __main__ - INFO - Saving labeled data to ../../data/processed/custom_imputation/labeled_outliers\labeled_outliers_2024_1.csv
+2025-03-26 11:03:20,059 - __main__ - INFO - Data successfully saved to ../../data/processed/custom_imputation/labeled_outliers\labeled_outliers_2024_1.csv
+2025-03-26 11:03:20,071 - __main__ - INFO - Successfully processed 1 out of 1 files
+2025-03-26 11:14:39,788 - __main__ - INFO - Found 1 files to process
+2025-03-26 11:14:39,788 - __main__ - INFO - Loading data from ../../data/processed/custom_imputation/2023/ml_based\imputed_ml_based_2023_Zone_1.csv
+2025-03-26 11:14:41,750 - __main__ - INFO - Labeling outliers in column: temperature
+2025-03-26 11:14:42,316 - __main__ - INFO - Labeling outliers in column: humidity
+2025-03-26 11:14:42,938 - __main__ - INFO - Automatically labeled 12697 outliers out of 524162 records (2.42%)
+2025-03-26 11:14:45,615 - __main__ - INFO - Generated plot: temperature_outliers_zone_Zone 1.png
+2025-03-26 11:14:47,961 - __main__ - INFO - Generated plot: humidity_outliers_zone_Zone 1.png
+2025-03-26 11:14:47,972 - __main__ - INFO - Saving labeled data to ../../data/processed/custom_imputation/2023/labeled_outliers\labeled_outliers_2023_1.csv
+2025-03-26 11:14:56,514 - __main__ - INFO - Data successfully saved to ../../data/processed/custom_imputation/2023/labeled_outliers\labeled_outliers_2023_1.csv
+2025-03-26 11:14:56,544 - __main__ - INFO - Successfully processed 1 out of 1 files
+2025-03-26 11:35:58,483 - __main__ - INFO - Found 1 files to process
+2025-03-26 11:35:58,483 - __main__ - INFO - Loading data from ../../data/processed/custom_imputation/forecasted\imputed_forecasted_data_2024_zone_1.csv
+2025-03-26 11:35:59,318 - __main__ - INFO - Labeling outliers in column: temperature
+2025-03-26 11:35:59,504 - __main__ - INFO - Labeling outliers in column: humidity
+2025-03-26 11:35:59,648 - __main__ - INFO - Automatically labeled 8058 outliers out of 218881 records (3.68%)
+2025-03-26 11:36:01,102 - __main__ - INFO - Generated plot: temperature_outliers_zone_Zone 1.png
+2025-03-26 11:36:02,242 - __main__ - INFO - Generated plot: humidity_outliers_zone_Zone 1.png
+2025-03-26 11:36:02,247 - __main__ - INFO - Saving labeled data to ../../data/processed/custom_imputation/labeled_outliers\labeled_outliers_2024_1.csv
+2025-03-26 11:36:05,293 - __main__ - INFO - Data successfully saved to ../../data/processed/custom_imputation/labeled_outliers\labeled_outliers_2024_1.csv
+2025-03-26 11:36:05,307 - __main__ - INFO - Successfully processed 1 out of 1 files

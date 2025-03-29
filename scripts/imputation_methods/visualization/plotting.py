@@ -13,7 +13,7 @@ class ImputationVisualizer:
 
     @staticmethod
     def plot_distributions(original: pd.DataFrame, imputed: pd.DataFrame,
-                           columns: List[str], method: str, output_dir: str = "./visualization/pictures"):
+                           columns: List[str], method: str, output_dir: str = "./visualization/pictures/forecasted_Custom_Imputation"):
         """
         Plot distribution comparison between original and imputed data and save plots.
 
@@ -43,7 +43,7 @@ class ImputationVisualizer:
             plt.close()
 
     @staticmethod
-    def plot_missing_patterns(data: pd.DataFrame, columns: List[str], output_dir: str = "/visualization/pictures"):
+    def plot_missing_patterns(data: pd.DataFrame, columns: List[str], output_dir: str = "/visualization/pictures/forecasted_Custom_Imputation/missing_Patterns"):
         """
         Plot missing data patterns and save the plot.
 
@@ -66,7 +66,7 @@ class ImputationVisualizer:
         plt.close()
 
     @staticmethod
-    def plot_evaluation_metrics(evaluations: Dict, output_dir: str = "/visualization/pictures"):
+    def plot_evaluation_metrics(evaluations: Dict, output_dir: str = "/visualization/pictures/forecasted_Custom_Imputation/"):
         """
         Plot evaluation metrics comparison and save plots.
 
